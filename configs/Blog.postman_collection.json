@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "df739332-5901-460b-9828-441dae5a46e7",
+		"name": "Blog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42058393"
+	},
+	"item": [
+		{
+			"name": "CreatePublication",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Hola bor\",\r\n    \"description\": \"Un blog como Reddit\",\r\n    \"course\": \"Tecnología\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/blog/v1/publication/createPublication",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"blog",
+						"v1",
+						"publication",
+						"createPublication"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AllPublications",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/blog/v1/publication/publications",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"blog",
+						"v1",
+						"publication",
+						"publications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPublicationID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/blog/v1/publication/publication/68211d188c984c53deddca9e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"blog",
+						"v1",
+						"publication",
+						"publication",
+						"68211d188c984c53deddca9e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPublicationByCourse",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/blog/v1/publication/course/Tecnología",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"blog",
+						"v1",
+						"publication",
+						"course",
+						"Tecnología"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletePublication",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/blog/v1/publication/deletePublication/68211d188c984c53deddca9e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"blog",
+						"v1",
+						"publication",
+						"deletePublication",
+						"68211d188c984c53deddca9e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addCommentary",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"author\": \"Lawler Garcia\",\r\n  \"content\": \"Vivan los cremas\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/blog/v1/commentary/addCommentary/6821231477fed6f8ad6c6373",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"blog",
+						"v1",
+						"commentary",
+						"addCommentary",
+						"6821231477fed6f8ad6c6373"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCommentaries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/blog/v1/commentary/getComentaries/6821223f3fab8d1a37fd613b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"blog",
+						"v1",
+						"commentary",
+						"getComentaries",
+						"6821223f3fab8d1a37fd613b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteCommentaries",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/blog/v1/commentary/deleteCommentary/6821816e588da953febd89b9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"blog",
+						"v1",
+						"commentary",
+						"deleteCommentary",
+						"6821816e588da953febd89b9"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
